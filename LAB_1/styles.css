@@ -1,0 +1,158 @@
+
+.div {
+    display: inline-block;
+}
+
+.S1 {
+    background-color: rgb(245,240,230);
+    display: inline-block;
+    width: auto;
+    height: auto;
+    scroll-margin-top: 65px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin:0;
+}
+
+.S1 p {
+    font-size: 28px;
+}
+
+.S2 {
+    background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+    color: white;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    scroll-margin-top: 65px;
+    margin-left: 0;
+    margin-right: 0;
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.S2 p {
+    font-size: 28px;
+}
+
+
+ul a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+#navBar a:hover {
+    color: white;
+    background-color: #182b49;
+}
+
+#navBar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+    max-width: 400px;
+    text-decoration: none;
+}
+
+#navBar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+.wrapper {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    background-color: rgba(245,240,230,1);
+
+    width: 100%;
+    height: auto;
+    font-size: 28px;
+}
+.one {
+    grid-column: 1 / 2;
+    grid-row: auto;
+    background-color:#182b49;
+    color: white;
+    max-height:500px;
+    overflow: auto;
+}
+.two {
+    grid-column: 2 / 3;
+    grid-row: auto;
+    background-color:#182b49;
+    color: white;
+    max-height:500px;
+    overflow: auto;
+}
+.three {
+    grid-column: 3 / 4;
+    grid-row: auto;
+    background-color:#182b49;
+    color: white;
+    max-height:500px;
+    overflow: auto;
+}
+.four {
+    grid-column: 4 / 5;
+    grid-row: auto;
+    background-color:#182b49;
+    color: white;
+    max-height:500px;
+    overflow: auto;
+}
+
+
+@media screen and (max-width:800px) {
+    #navBar {
+        visibility: hidden;
+    }
+
+    #img1 {
+        max-width: 75%;
+        
+    }
+    h2 {
+        font-size:24px;
+    }
+    .S1 p {
+        font-size: 20px;
+    }
+    .S2 p {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .three {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .four {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+}
