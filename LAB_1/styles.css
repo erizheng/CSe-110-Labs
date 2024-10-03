@@ -4,11 +4,17 @@
 }
 
 .S1 {
-    background-color: rgba(245,240,230,1);
+    background-color: rgb(245,240,230);
     display: inline-block;
-    width: 100%;
+    width: auto;
     height: auto;
-    scroll-margin-top: 30px;
+    scroll-margin-top: 65px;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin:0;
 }
 
 .S1 p {
@@ -21,39 +27,28 @@
     display: inline-block;
     width: 100%;
     height: auto;
-    scroll-margin-top: 30px;
+    scroll-margin-top: 65px;
+    margin-left: 0;
+    margin-right: 0;
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
 }
 .S2 p {
     font-size: 28px;
 }
 
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-li {
-    float: left;
-}
-
-li a {
+ul a {
     display: block;
     color: black;
     text-align: center;
-    padding: 8px 2px;
+    padding: 10px 10px;
     text-decoration: none;
-    scroll-margin-top: 20px;
 }
 
 #navBar a:hover {
     color: white;
-}
-
-.active {
     background-color: #182b49;
 }
 
@@ -61,8 +56,9 @@ li a {
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #182b49;
+    background-color: white;
     max-width: 400px;
+    text-decoration: none;
 }
 
 #navBar a {
@@ -70,12 +66,8 @@ li a {
     display: block;
     color: black;
     text-align: center;
-    font-size: 28px;
-    scroll-margin-top: 20px;
-}
-
-.sec1 {
-    scroll-margin-top: 20px;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 
@@ -123,3 +115,44 @@ li a {
     overflow: auto;
 }
 
+
+@media screen and (max-width:800px) {
+    #navBar {
+        visibility: hidden;
+    }
+
+    #img1 {
+        max-width: 75%;
+        
+    }
+    h2 {
+        font-size:24px;
+    }
+    .S1 p {
+        font-size: 20px;
+    }
+    .S2 p {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .three {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .four {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+}
