@@ -1,38 +1,40 @@
+import { Label, Note } from "./types";
+
 export const dummyNotesList = [
     {
         id: 1,
         title: "test note 1 title",
         content: "test note 1 content",
-        label: "other",
+        label: Label.other,
     },
     {
         id: 2,
         title: "test note 2 title",
         content: "test note 2 content",
-       label: "personal",
+       label: Label.personal,
    },
    {
        id: 3,
        title: "test note 3 title",
        content: "test note 3 content",
-       label: "work",
+       label: Label.work,
    },
    {
        id: 4,
        title: "test note 4 title",
        content: "test note 4 content",
-       label: "study",
+       label: Label.study,
    },
    {
        id: 5,
        title: "test note 5 title",
        content: "test note 5 content",
-       label: "study",
+       label: Label.study,
    },
    {
        id: 6,
        title: "test note 6 title",
        content: "test note 6 content",
-       label: "personal",
+       label: Label.personal,
    },
 ]

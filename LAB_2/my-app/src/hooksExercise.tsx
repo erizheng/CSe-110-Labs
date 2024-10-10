@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { ThemeContext, themes, FavContext, heart} from "./themeContext";
 import { dummyNotesList } from "./constants"; 
+import { Label, Note } from "./types";
 
 // export function ClickCounter() {
 //   const theme = useContext(ThemeContext);
@@ -67,9 +68,6 @@ export function ToggleTheme(prop:ThemeProps) {
  }
 
 export default ToggleTheme;
-
-
-
 
 
 function HeartButton() {
