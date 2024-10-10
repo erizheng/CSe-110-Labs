@@ -84,7 +84,7 @@
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
  }
@@ -118,6 +118,7 @@
   border: 1px solid black;
   padding: 10px;
   font-size: 16px;
+  max-width: 175px;
  }
  
  .note-form button {
@@ -147,4 +148,14 @@
  .edit-buttons button:last-of-type {
   background-color: rgb(220, 89, 89);
   color: white;
+ }
+
+ .FavList {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  margin-left: 10px;
+  white-space: pre-line;
+  line-height: 9px;
  }
