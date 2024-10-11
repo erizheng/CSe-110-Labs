@@ -43,7 +43,7 @@ function App() {
           setCreateNote({ ...createNote, title: event.target.value })}
         	required></input></div>
 
-          <div><textarea placeholder="Note Content" 
+          <div><textarea placeholder="Note Content"
           onChange={(event) =>
           setCreateNote({ ...createNote, content: event.target.value })}
         	required></textarea></div>
@@ -79,10 +79,8 @@ function App() {
             onClick={(event) => {
               event.preventDefault();
               setNotes(notes.filter(i => i != note));
-              if(FavList.includes(note.title)){
+              if(FavList.includes(note.title) ){
                 SetFav((prevFavList) => prevFavList.filter(j => j !== note.title));
-              }else{
-                SetFav((prevFavList) => [...prevFavList, note.title]);
               }
             }}>x</button>
         	</div>
@@ -93,7 +91,7 @@ function App() {
     	))}
   	</div>
      
-
+    
        <div className="FavList">
           {/* Favorite List */}
           <h2>List of Favorites:</h2>
@@ -111,6 +109,7 @@ function App() {
 
    </div>
    </ThemeContext.Provider>
+
 
  );
     

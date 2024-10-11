@@ -62,7 +62,7 @@ export function ToggleTheme(prop:ThemeProps) {
  
   return (
     <ThemeContext.Provider value={prop.t}>
-      <button onClick={toggleTheme}> Theme </button>
+      <button type="button" onClick={toggleTheme}> Theme </button>
     </ThemeContext.Provider>
   );
  }
