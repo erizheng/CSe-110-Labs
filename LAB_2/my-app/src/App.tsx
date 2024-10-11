@@ -103,8 +103,10 @@ function App() {
               ${str}
             `)
           })
+            {/* copied reference from https://stackoverflow.com/questions/48215965/how-to-display-an-array-of-strings-in-react-component
+            for listing string*/}
           }
-          
+         
 
        </div>
       
